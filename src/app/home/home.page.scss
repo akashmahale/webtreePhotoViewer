@@ -1,1 +1,16 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+}
 
+.thumbnail{
+    flex-grow: 1;
+    height: 50vw;
+
+    img {
+        height: 50vw;
+        width: 50vw;
+    }
+    
+}

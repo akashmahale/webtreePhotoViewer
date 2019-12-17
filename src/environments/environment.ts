@@ -3,8 +3,14 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  uri: 'https://jsonplaceholder.typicode.com'
 };
+
+export const api = {
+  images: `${environment.uri}/photos`
+};
+
 
 /*
  * For easier debugging in development mode, you can import the following file

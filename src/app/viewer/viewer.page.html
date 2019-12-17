@@ -1,0 +1,19 @@
+<ion-header no-border style="position: absolute;">
+  <ion-toolbar color='dark'>
+    <ion-buttons slot="start">
+      <ion-back-button text="Back" icon=""></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content color="dark">
+  <div class="info">
+    {{image?.title}}<br>
+    <span class="subInfo">Album Id: {{image?.albumId}} | Id: {{image?.id}}</span>
+  </div>
+  <div class="imageContainer">
+    <img [src]="image?.url">
+  </div>
+
+</ion-content>

@@ -1,14 +1,20 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="dark">
     <ion-title>
-      Ionic Blank
+      Images
     </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="presentAlert()" >
+        Filter
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+<ion-content color="dark">
+  <div class="main">
+    <div *ngFor="let image of images; let i = index" class="thumbnail" (click)=openDetailsWithQueryParams(image)>
+      <img [src]="image?.thumbnailUrl"/>
+    </div>
   </div>
 </ion-content>

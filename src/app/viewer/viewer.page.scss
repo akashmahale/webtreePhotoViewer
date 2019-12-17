@@ -1,0 +1,17 @@
+.imageContainer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info {
+    position: absolute;
+    bottom: 0;
+    padding: 32px 8px;
+    color: #969596;
+}
+
+.subInfo {
+    font-size: 0.8em;
+}

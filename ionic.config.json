@@ -1,5 +1,7 @@
 {
   "name": "webtreePhotoViewer",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
